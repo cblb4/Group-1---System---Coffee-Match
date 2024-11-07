@@ -71,6 +71,33 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.querySelector('.register-container form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const name = document.querySelector('input[type="text"]').value;
+      const email = document.querySelector('input[type="email"]').value;
+      const password = document.querySelector('input[type="password"]').value;
+  
+      const data = { name, email, password };
+
+      fetch('http://127.0.0.1:3000/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      .then(response => response.text()) 
+      .then(data => {
+        alert(data); 
+      })
+      .catch(error => {
+        console.error('Error:', error); 
+      });
+    });
+  </script>
   
   <script src="script.js"></script>
 </body>

@@ -1,0 +1,84 @@
+/* Apply the gradient to the entire screen */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(135deg, #b3aaeb 0%, #6d63bc 100%); /* Full-screen gradient */
+    font-family: 'Poppins', sans-serif; /* Link the Poppins font */
+}
+
+#favorites-section {
+    padding: 20px;
+}
+
+#favorites-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.favorite-item {
+    width: 200px;
+    color: #000000;
+    border: 1px solid #fefbfb;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* For positioning the trash bin button */
+}
+
+.favorite-item-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.favorite-item-details h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.favorite-item-details p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Trash button styled to look like a button at bottom-right */
+.trash-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f44336; /* Red background */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.trash-btn ion-icon {
+    font-size: 18px;
+}
+
+.trash-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Clear all favorites button */
+#clear-favorites {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#clear-favorites:hover {
+    background-color: #d32f2f;
+}

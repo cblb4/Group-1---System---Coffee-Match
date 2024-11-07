@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img id="profile-pic" src="images/comments-solid.png" alt="Profile Picture"> <!-- Default image -->
+            <input type="file" id="file-upload" accept="image/*">
+        </div>
+
+        <div class="account-settings">
+            <h3>Account Settings</h3>
+            <div class="setting">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="setting">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Phone Number">
+            </div>
+            <div class="setting">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="setting">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="save-btn">Save</button>
+            <button id="edit-btn" disabled>Edit Profile</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

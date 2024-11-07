@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <section id="tranding">
+        <div class="container">
+            <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 Start -->
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Blugre Coffee.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Blugre Coffee</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.1</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Blugre Coffee</h2>
+                            <p>Known for its Durian-based coffee blends, Blugre Coffee offers a unique taste experience.</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=3H7W+JM8, Matina Town Square Mc Arthur Highway, Davao City, 8000&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Cafe Tadeo.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Cafe Tadeo</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.2</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Cafe Tadeo</h2>
+                            <p>"cozy place courteous staff"</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Purok%2030,%20Moonwalk%20Compound,%20Ma-a%20Road%208000%20Davao%20City,%20Philippines&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                     
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Green Coffee.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Green Coffee</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.3</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Green Coffee</h2>
+                            <p>"The place is great and quite spacious. Perfect for studying and relaxing at the same time."</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ruby St, Poblacion District, Davao City, Davao del Sur&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Burst Cafe.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Burst Cafe</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.7</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Burst Cafe</h2>
+                            <p>"Perfect place for studying/working. Has sockets for charging. Signal (Smart) is bad but they give out free 2 hours internet voucher for every product you purchase."</p>
+                            <!-- Embed Google Map -->
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=JUNA SUBDIVISION, ACACIA, CORNER Calachuchi, MATINA, Davao City, 8000 Davao del Sur&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Kyrre Cafe.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Kyrre Cafe</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.7</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Kyree Cafe</h2>
+                            <p>"If you are on Team Wood or Team White, this place is for you! The interior of this cafe is aesthetically pleasing and relaxing."</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Unit 5 Casaloda Building, Juna Ave, Subdivision&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Mapplehouse.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Mapplehouse</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.7</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Mapplehouse</h2>
+                            <p>"The food is ok, price is Davao average, ambiance is nice but a little noisy if the cafe is full. I like the pancakes. Servers took a while to serve/take orders."</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Subdivis, Juna Ave, Matina, Davao City, Davao del Sur&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide" onclick="toggleOverlay(this)">
+                        <div class="tranding-slide-img">
+                            <img src="Cafe/Daily Dose.jpg" alt="Trending">
+                        </div>
+                        <div class="tranding-slide-content">
+                            <h1 class="Coffee-price">₱200–400</h1>
+                            <div class="tranding-slide-content-bottom">
+                                <h2 class="coffe-name">Daily Dose</h2>
+                                <div class="like-dislike-buttons">
+                                    <button class="like-btn" onclick="toggleLike(event)">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+                                    <button class="dislike-btn" onclick="toggleDislike(event)">
+                                        <ion-icon name="thumbs-down-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <h3 class="food-rating">
+                                    <span>4.7</span>
+                                    <div class="rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h2>Daily Dose</h2>
+                            <p>"the place has an up stairs dining but it is still a bit small and can only catera few groups. the area is cozy and the service was great. food and drinks wise, it was delicious. a bit pricey though."</p>
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Door 3, Casaloda Building, Juna Subdivision Matina, Davao City, 8000 Davao del Sur&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-container">
+        <div class="new-container">
+            <div class="bottom">
+                <div class="icons">
+                    <a href="home.html"><img src="icon/house-solid.png" alt="Home"></a>
+                    <a href="favorites.html"><img src="icon/heart-solid.png" alt="Favorites"></a>
+                    <a href="profile.html"><img src="icon/user-solid.png" alt="Profile"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
